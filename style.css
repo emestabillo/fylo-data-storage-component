@@ -44,13 +44,16 @@ main {
 
 section {
   background: var(--dark-blue);
-  padding: 4rem 11rem 4rem 4rem;
   border-radius: 0.8rem;
+}
+
+.brand {
+  padding: 4rem 11rem 4rem 4rem;
   border-top-right-radius: 10rem;
 }
 
 .container {
-  max-width: 18rem;
+  /* max-width: 18rem; */
   /* max-width: 46rem; */
 }
 
@@ -75,12 +78,73 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1rem;
 }
 
 li:first-child {
   margin-left: 0;
 }
 
+.storage {
+  padding: 3.6rem 3.2rem 5.6rem;
+  position: relative;
+}
+
+.storage p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.gigs {
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 2rem;
+  background: var(--darker-blue);
+  border-radius: 0.8rem;
+  margin-bottom: 1.3rem;
+}
+
+.capacity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.capacity h5 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.alert {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 9rem;
+  /* top: 2.6rem; */
+  width: 18rem;
+  height: 7rem;
+
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--darker-blue);
+  background: var(--body-copy);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.alert span {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+  align-self: center;
+  padding-left: 1.5rem;
+}
 /* .attribution {
   font-size: 11px;
   text-align: center;
