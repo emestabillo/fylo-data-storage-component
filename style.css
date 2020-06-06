@@ -49,7 +49,6 @@ section {
 
 .brand {
   padding: 3rem 11rem 4rem 4rem;
-  /* padding: 4rem 11rem 4rem 4rem; */
   border-top-right-radius: 10rem;
   margin-bottom: 1.5rem;
 }
@@ -99,12 +98,89 @@ li:first-child {
 
 .progress-bar {
   width: 100%;
-  /* height: 2rem; */
   height: 1.8rem;
   background: var(--darker-blue);
   border-radius: 0.8rem;
-  /* margin-bottom: 1.3rem; */
   margin-bottom: 1rem;
+}
+
+.dot {
+  position: absolute;
+  height: 1.3rem;
+  width: 1.2rem;
+  background: #fff;
+  border-radius: 1rem;
+  z-index: 2;
+
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(18rem);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(18rem);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(18rem);
+  }
+}
+
+.progress-value {
+  position: relative;
+  background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 1.4rem;
+  border-radius: 0.8rem;
+  transform: translate(2px, 2px);
+
+  animation: progressBar 1s ease both;
+  animation-fill-mode: both;
+  -webkit-animation: progressBar 1s ease both;
+  -moz-animation: progressBar 1s ease both;
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
 }
 
 .capacity {
@@ -123,27 +199,27 @@ li:first-child {
   left: 0;
   right: 0;
   bottom: 13rem;
-  /* top: 2.6rem; */
   width: 18rem;
   height: 7rem;
-
-  font-size: 3.6rem;
-  font-weight: 700;
-  color: var(--darker-blue);
   background: #fff;
-  /* background: var(--body-copy); */
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
 }
 
+.alert p {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--darker-blue);
+}
+
 .alert span {
   font-size: 1.3rem;
   color: var(--grayish-blue);
   align-self: center;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
 }
 /* .attribution {
   font-size: 11px;
