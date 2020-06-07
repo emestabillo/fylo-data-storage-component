@@ -19,4 +19,11 @@ function countUp() {
     value.innerHTML = i;
   }
 }
+
 const counter = setInterval(countUp, 1);
+
+//Slider animation
+// const slider = document.querySelector('.slider');
+// let position = 0;
+
+// slider.style.
