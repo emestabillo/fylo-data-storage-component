@@ -90,7 +90,7 @@ li:first-child {
 .storage p {
   font-size: 1.4rem;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1.4rem;
 }
 
 .counter {
@@ -234,7 +234,7 @@ li:first-child {
     align-self: flex-end;
     height: 15rem;
     padding-left: 3rem;
-    padding-top: 4rem;
+    padding-top: 3.8rem;
     margin-bottom: 1.5rem;
   }
 
