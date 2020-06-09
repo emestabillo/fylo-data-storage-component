@@ -45,7 +45,8 @@ main {
   position: relative;
 }
 
-section {
+.brand,
+.storage {
   background: var(--dark-blue);
   border-radius: 0.8rem;
 }
