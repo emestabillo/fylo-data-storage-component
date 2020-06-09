@@ -112,10 +112,10 @@ li:first-child {
   transform: translate(2px, 2px);
   width: 75%;
 
-  /* animation: progressBar 1s ease both;
+  animation: progressBar 1s ease both;
   animation-fill-mode: both;
   -webkit-animation: progressBar 1s ease both;
-  -moz-animation: progressBar 1s ease both; */
+  -moz-animation: progressBar 1s ease both;
 }
 
 @-webkit-keyframes progressBar {
