@@ -1,29 +1,19 @@
-const value = document.querySelector("#value");
+// const counters = document.querySelectorAll(".counter");
+// const speed = 150;
 
-// let i = 0;
+// counters.forEach((counter) => {
+//   const updateCount = () => {
+//     const target = +counter.getAttribute("data-target");
+//     const count = +counter.innerText;
 
-// function countUp() {
-//   second++;
-//   value.innerHTML = i;
-//   if (second == 185) clearInterval(counter);
-// }
-// const counter = setInterval(countUp, 1);
+//     const increment = target / speed;
 
-let i = 0;
-
-function countUp() {
-  if (i >= 185) {
-    clearInterval(counter);
-  } else {
-    i++;
-    value.innerHTML = i;
-  }
-}
-
-const counter = setInterval(countUp, 1);
-
-//Slider animation
-// const slider = document.querySelector('.slider');
-// let position = 0;
-
-// slider.style.
+//     if (count < target) {
+//       counter.innerText = Math.min(Math.ceil(count + increment), target);
+//       setTimeout(updateCount, 1);
+//     } else {
+//       count.innerText = target;
+//     }
+//   };
+//   updateCount();
+// });

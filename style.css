@@ -6,7 +6,7 @@
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --darker-blue: hsl(229, 57%, 11%);
-  /* --body-copy: #f8f9fb; */
+  --white: #fff;
 }
 
 /* RESET */
@@ -20,13 +20,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /*10px basefontcopy=14px*/
+  font-size: 62.5%;
   height: 100%;
 }
 
 body {
   background-color: var(--darker-blue);
-  color: var(--body-copy);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,6 @@ section {
 
 .logo {
   padding-bottom: 3.5rem;
-  /* padding-right: 12rem; */
 }
 
 ul {
@@ -83,10 +82,8 @@ li:first-child {
 
 .storage {
   padding: 2.8rem 3.2rem 5.6rem;
-  /* padding: 3.6rem 3.2rem 5.6rem; */
   position: relative;
   color: var(--pale-blue);
-  /* margin-bottom: 2.4rem; */
   margin-bottom: 2rem;
 }
 
@@ -96,13 +93,11 @@ li:first-child {
   padding-bottom: 2rem;
 }
 
-.gigs {
+.counter {
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .progress-bar {
-  /* width: 100%; */
   height: 1.8rem;
   background: var(--darker-blue);
   border-radius: 0.8rem;
@@ -115,14 +110,12 @@ li:first-child {
   height: 1.4rem;
   border-radius: 0.8rem;
   transform: translate(2px, 2px);
-  /* transition-property: width;
-  transition-duration: 1s; */
   width: 75%;
 
-  animation: progressBar 1s ease both;
+  /* animation: progressBar 1s ease both;
   animation-fill-mode: both;
   -webkit-animation: progressBar 1s ease both;
-  -moz-animation: progressBar 1s ease both;
+  -moz-animation: progressBar 1s ease both; */
 }
 
 @-webkit-keyframes progressBar {
@@ -158,7 +151,7 @@ li:first-child {
   display: block;
   height: 1.1rem;
   width: 1.1rem;
-  background: #fff;
+  background: var(--white);
   border-radius: 1rem;
   left: calc(100% - 1.5rem);
 }
@@ -180,7 +173,7 @@ li:first-child {
   right: 0;
   width: 18rem;
   height: 7rem;
-  background: #fff;
+  background: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +193,8 @@ li:first-child {
   padding-left: 1rem;
   text-transform: uppercase;
 }
-/* .attribution {
+
+.attribution {
   font-size: 11px;
   text-align: center;
   position: fixed;
@@ -208,8 +202,8 @@ li:first-child {
   width: 100%;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
-} */
+  color: hsl(228, 8%, 48%);
+}
 
 @media screen and (max-width: 767px) {
   .alert {
@@ -232,7 +226,6 @@ li:first-child {
   .brand {
     flex: 1;
     margin-right: 3.5rem;
-    /* padding: 3rem 6rem 4rem 4rem; */
     padding: 3rem 8rem 4rem 4rem;
   }
 
@@ -240,8 +233,6 @@ li:first-child {
     flex: 2;
     align-self: flex-end;
     height: 15rem;
-    /* margin-bottom: 1.5rem; */
-    /* padding-left: 5rem; */
     padding-left: 3rem;
     padding-top: 4rem;
     margin-bottom: 1.5rem;
@@ -254,7 +245,6 @@ li:first-child {
   .alert {
     margin-right: 0;
     right: 4rem;
-    /* bottom: 0; */
     top: -0.5rem;
   }
 
@@ -266,7 +256,7 @@ li:first-child {
     width: 0;
     height: 0;
     border: 30px solid transparent;
-    border-top-color: #fff;
+    border-top-color: var(--white);
     border-bottom: 0;
     border-right: 0;
     margin-left: -1.3rem;
